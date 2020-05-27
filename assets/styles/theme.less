@@ -1,0 +1,71 @@
+.left-bar,
+.right-bar{
+position: absolute;
+left: 0;
+top: 50px;
+bottom: 0;
+width: 300px;
+color: #fff;
+border: 1px solid #323539;
+z-index: 1;
+background-color: rgba(34,34,34,.8);
+transition: left 1s;
+z-index: 10;
+}
+
+.right-bar{
+    left: inherit;
+    right: 10px;
+    top: 60px;
+    width: 400px;
+    overflow-y: scroll;
+
+    .road-name{
+    padding: 15px;
+    }
+
+    .right-title{
+    width: 100%;
+    padding: 15px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 12px;
+    }
+
+    .judgeTable{
+    margin-bottom: 32px;
+    }
+
+}
+.gas-mask{
+    background-color: #003448;
+
+    .geoengine-marker{
+    color: red;
+    }
+
+    .leaflet-right{
+    right: 410px;
+    }
+
+    .leaflet-top{
+    top: 60px;
+    }
+
+    .leaflet-touch .leaflet-bar{
+    border: 0 none;
+    }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out{
+    float: left;
+    margin-right: 5px;
+    }
+
+    .leaflet-bottom{
+    display: none;
+    }
+
+}

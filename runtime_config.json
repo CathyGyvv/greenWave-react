@@ -1,0 +1,163 @@
+{
+  "env": "dev",
+  "debug": true,
+  "configDir": "./config",
+  "keys": [
+    "base_framework"
+  ],
+  "defaultHttpErrorCode": 500,
+  "serverName": "",
+  "serverParam": {},
+  "serverTimeout": 1000,
+  "waitForExit": 10000,
+  "honeycomb": {
+    "serverParam": {
+      "server": {},
+      "location": {}
+    }
+  },
+  "logs": {
+    "sys": {
+      "level": "INFO"
+    }
+  },
+  "dumpConfig": true,
+  "pluginConfigKey": "framework",
+  "checkConfig": {
+    "cookieSession": [
+      "secret"
+    ]
+  },
+  "middleware": {
+    "static": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/static",
+      "router": "/assets",
+      "config": {
+        "root": ""
+      }
+    },
+    "cors": {
+      "enable": false,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/cors",
+      "router": "/",
+      "config": {
+        "allowOrigins": ""
+      }
+    },
+    "timeout": {
+      "enable": false,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/timeout",
+      "config": {
+        "timeout": "15s"
+      }
+    },
+    "referer": {
+      "enable": false,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/referer",
+      "config": {}
+    },
+    "cookieParser": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/cookie_parser"
+    },
+    "cookieSession": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/cookie_session",
+      "config": {
+        "secret": "defalutSecret!PLEASE!REPLACE!",
+        "name": "permissions_session"
+      }
+    },
+    "bodyParser": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/body_parser",
+      "config": {
+        "json": {
+          "strict": true,
+          "limit": 524288
+        },
+        "urlencoded": {
+          "strict": true,
+          "limit": 524288
+        }
+      }
+    },
+    "csrf": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/csrf",
+      "config": {
+        "saltLength": 8,
+        "secretLength": 18
+      }
+    },
+    "log": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/middleware/log",
+      "config": {}
+    },
+    "public": {
+      "enable": true,
+      "router": "/static",
+      "extends": "static",
+      "config": {
+        "root": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react/static"
+      }
+    },
+    "webpack": {
+      "enable": true,
+      "module": "honeypack",
+      "router": "/assets"
+    },
+    "thirdPartyBind": {
+      "enable": false,
+      "module": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react/middleware/thirdPartyBind"
+    },
+    "login": {
+      "enable": false,
+      "module": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react/middleware/login"
+    },
+    "loginLocal": {
+      "enable": false,
+      "module": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react/middleware/loginLocal"
+    },
+    "spa": {
+      "enable": true,
+      "module": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react/middleware/spa",
+      "config": {
+        "ignore": [
+          "/api",
+          "/assets"
+        ]
+      }
+    }
+  },
+  "extension": {
+    "redirect": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/extension/redirect",
+      "config": {
+        "allowDomains": []
+      }
+    },
+    "timer": {
+      "enable": true,
+      "module": "/Users/gongying/node_modules/hc-bee/lib/extension/timer"
+    },
+    "appClient": {
+      "enable": true,
+      "module": "hc-service-client",
+      "config": {}
+    }
+  },
+  "root": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react",
+  "serverRoot": "/Users/gongying/Desktop/bywin/半云-信号灯/greenWave-react",
+  "systemToken": "Please Enter Your Own Token into ~/.honeycomb.json",
+  "isDev": true,
+  "prefix": "/app/app-name",
+  "services": {
+    "backend_server": "http://192.168.2.24:8082/"
+  },
+  "logoutPage": "https://account.aliyun.com/logout/logout.htm?oauth_callback=",
+  "cityInfoReqPrefix": "/app/app-name/api/proxy/cityInfo"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "example",
+  "version": "1.1.0",
+  "description": "城市大脑智能应用-脚手架",
+  "main": "app.js",
+  "scripts": {
+    "test": "standard --verbose | snazzy",
+    "postpack": "rm -f gitignore",
+    "checkFormat": "./checkFormat.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "pre-commit": {
+    "run": [
+      "checkFormat"
+    ],
+    "silent": true
+  },
+  "standard": {
+    "ignore": [
+      "/test/",
+      "/document/",
+      "node_modules",
+      "/out/"
+    ],
+    "parser": "babel-eslint"
+  },
+  "author": "honeycomb group",
+  "dependencies": {
+    "hc-service-client": "^1.0.0",
+    "hc-proxy": "^1.0.0",
+    "hc-signature-auth": "^1.0.0",
+    "hc-bee": "^0.1.0",
+    "path-ignore": "^1.0.1",
+    "axios": "^0.18.0",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "honeypack": "^1.0.1",
+    "api-annotation": "^1.0.0-alpha.2",
+    "babel-eslint": "^8.2.2",
+    "intelli-espower-loader": "^1.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "power-assert": "^1.4.4",
+    "pre-commit": "^1.2.2",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1",
+    "supertest": "^3.0.0"
+  }
+}

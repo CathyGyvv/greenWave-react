@@ -1,0 +1,25 @@
+.shrink-arrow{
+    position: absolute;
+    left: 300px;
+    top: 5px;
+    width: 12px;
+    height: 30px;
+    line-height:30px;
+    z-index: 1050;
+    cursor: pointer;
+    transition: left 1s;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    &.shrinked{
+        left: 0px;
+    }
+    .arrowLeft{
+        transform: rotate(180deg);
+        font-family: DataProduct;
+        font-size: 8px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}

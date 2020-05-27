@@ -1,0 +1,114 @@
+@import "../styles/scroll.css";
+@import "../styles/iconfont.css";
+
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  /*font-family: "NotoSansHans", "PingFangSC", "microsoft yahei", "helvetica",
+    "arial", "simsun", "sans-serif";*/
+  font-family: 微软雅黑, MicrosoftYaHei;
+  margin: 0;
+  background-color: #003448;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#container,
+.container,
+.main-content,
+.right-content{
+  height:100%;
+}
+.too{
+  height:100%;
+  overflow: hidden;
+}
+
+.list,
+.detail{
+position: absolute;
+left: 0;
+top: 50px;
+bottom: 0;
+width: 300px;
+color: #fff;
+border: 1px solid #323539;
+z-index: 1;
+background-color: rgba(34,34,34,.8);
+transition: left 0.5s;
+z-index: 10;
+}
+.list-hide{
+  left: -300px;
+}
+
+.detail{
+    left: inherit;
+    right: 10px;
+    top: 60px;
+    width: 400px;
+    // overflow-y: scroll;
+    display:flex;
+    flex-direction:column;
+    transition: right 0.5s;
+     
+}
+.detail-hide{
+  right: -400px;
+}
+.detail-show{
+  right: 10px;
+}
+
+.gas-mask{
+    background-color: #003448;
+    height:100%;
+    .geoengine-marker{
+    color: red;
+    }
+
+    .leaflet-right{
+      right: 134px;
+      transition: right 0.5s
+    }
+
+    .leaflet-top{
+    top: 50px;
+    }
+
+    .leaflet-touch .leaflet-bar{
+    border: 0 none;
+    }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out{
+    float: left;
+    margin-right: 5px;
+    }
+
+    .leaflet-bottom{
+      display: none;
+    }
+
+    .map{
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;
+      z-index: 1;
+      background: #003448;
+    }
+
+}
+.gas-mask-hide .leaflet-right{
+  right: 410px;
+}
+.next-calendar-body {
+  border-top: 1px solid #27556B;
+}
+.next-calendar-body, .next-calendar-card .next-calendar-range-body-left, .next-calendar-card .next-calendar-range-body-right {
+  background: #104256;
+}

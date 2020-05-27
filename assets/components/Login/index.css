@@ -1,0 +1,57 @@
+.login-component {
+  width: 100%;
+  height: 100%;
+  background: url('../../public/img/login.png') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-component .title {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 6px;
+  margin-top: 20px;
+}
+.login-component .login {
+  width: 360px;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+.login-component .login .img {
+  width: 280px;
+  height: 48px;
+  margin-bottom: 20px;
+  background: url('../../public/img/favicon@2x.png') no-repeat center;
+}
+.login-component .ant-input-group .ant-input-affix-wrapper {
+  height: 40px;
+}
+.login-component .ant-input-group .ant-input-affix-wrapper .ant-input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #B2B2B2;
+}
+.login-component .ant-input-group .ant-input-affix-wrapper .ant-input:not(:first-child) {
+  padding-left: 42px;
+}
+.login-component .ant-input-group .ant-input-affix-wrapper:nth-child(2) {
+  margin-top: 20px;
+}
+.login-component .submit {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  background: #00C1DE;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}

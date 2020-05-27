@@ -1,0 +1,21 @@
+{
+  "assets": {
+    "type":"command",
+    "command":{
+      "cmd":[
+        "tnpm install",
+        "cd assets",
+        "tnpm install",
+        "tnpm install honeypack",
+        "honeypack build",
+        "cd ..",
+        "mkdir -p .package/assets/lib",
+        "mkdir -p .package/assets/styles",
+        "mkdir -p .package/assets/public",
+        "mkdir -p .package/assets/fonts",
+        "mv assets/build/* .package/assets",
+        "sh cpModules.sh"
+      ]
+    }
+  }
+}

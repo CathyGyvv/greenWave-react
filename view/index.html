@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="<%= prefix %>/assets/public/img/favicon.ico">
+  <title><%= title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- 正式环境中,请将上面几个链接替换为下面的链接,注意 {version} 改为你对应的资源版本号 -->
+  <!--<link rel="stylesheet" href="//g.alicdn.com//{version}??lib/next.css,pages/help/index.bundle.css">-->
+  <link rel="shortcut icon" href="<%= prefix %>/assets/public/img/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript">
+  window.CSRF_TOKEN = "<%= csrfToken %>"
+  window.reqPrefix = "<%= reqPrefix %>"
+  window.cityInfoReqPrefix = "<%= cityInfoReqPrefix %>"
+  window.logoutPage = "<%= logoutPage %>"
+  // window.TILE_URL = 'http://101.132.143.61:25003/v3/tile?z={z}&x={x}&y={y}'
+  window.cityData = {
+    unAuthComs:[]
+  }
+</script>
+<!-- 需要替换的链接 Start -->
+<% if (isDebug) { %>
+  <!-- <link rel="stylesheet" href="<%= prefix %>/assets/node_modules/@alife/next/dist/next.css"> -->
+  <link rel="stylesheet" href="<%= prefix %>/assets/styles/leaflet.css">
+  <link rel="stylesheet" href="<%= prefix %>/assets/app.css">
+  <script src="<%= prefix %>/assets/node_modules/babel-polyfill/dist/polyfill.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/react/dist/react-with-addons.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/d3/d3.min.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/lodash/lodash.min.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/leaflet/dist/leaflet.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/react-leaflet/dist/react-leaflet.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/react-dom/dist/react-dom.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/react-router/umd/ReactRouter.js"></script>
+  <!-- <script src="<%= prefix %>/assets/node_modules/@alife/next/dist/next.min.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/gas.gl/dist/react_geoengine.min.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/gas.gl/dist/react_geoengine_gl.min.js"></script>
+  <script src="<%= prefix %>/assets/node_modules/bizcharts/umd/BizCharts.min.js"></script> -->
+  <script src="<%= prefix %>/assets/node_modules/intl/dist/Intl.min.js"></script>
+<% } else { %>
+  <!-- <link rel="stylesheet" href="<%= prefix %>/assets/lib/next.css"> -->
+  <link rel="stylesheet" href="<%= prefix %>/assets/styles/leaflet.css">
+  <link rel="stylesheet" href="<%= prefix %>/assets/app.css">
+  <script src="<%= prefix %>/assets/lib/polyfill.js"></script>
+  <script src="<%= prefix %>/assets/lib/react-with-addons.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/d3.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/lodash.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/leaflet.js"></script>
+  <script src="<%= prefix %>/assets/lib/react-leaflet.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/react-dom.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/ReactRouter.min.js"></script>
+  <!-- <script src="<%= prefix %>/assets/lib/next.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/react_geoengine.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/react_geoengine_gl.min.js"></script>
+  <script src="<%= prefix %>/assets/lib/BizCharts.min.js"></script> -->
+  <script src="<%= prefix %>/assets/lib/Intl.min.js"></script>
+<% } %>
+<script type='text/javascript'>
+  // window.Gas = {
+  //   react_geoengine,
+  //   react_geoengine_gl
+  // }
+</script>
+<script type="text/javascript" src="<%= prefix %>/assets/public/js/data-set.js"></script>
+<script type="text/javascript" src="<%= prefix %>/assets/vendor.js"></script>
+<script type="text/javascript" src="<%= prefix %>/assets/app.js"></script>
+<!-- 正式环境中,请将上面几个链接替换为下面2个链接,注意 {version} 改为你对应的资源版本号 -->
+<!--<script src="//g.alicdn.com//{version}??lib/polyfill.min.js,lib/react-with-addons.min.js,lib/react-dom.min.js,lib/redux.min.js,lib/react-redux.min.js,lib/ReactRouter.min.js,lib/ReactRouterRedux.min.js,lib/redux-thunk.min.js,lib/next.js"></script>-->
+<!--<script src="//g.alicdn.com//{version}??vendor.js,pages/help/index.js"></script>-->
+
+</body>
+</html>

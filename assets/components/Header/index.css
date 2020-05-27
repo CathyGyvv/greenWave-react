@@ -1,0 +1,139 @@
+.header-component .sitenav {
+  width: 100%;
+  height: 50px;
+  color: white;
+  z-index: 1000;
+  clear: both;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.header-component .sitenav .header-item {
+  margin-left: 1px;
+}
+.header-component .sitenav .header-item:hover,
+.header-component .sitenav .header-item.selected {
+  border-bottom: #00CDEC 3px solid;
+}
+.header-component .sitenav .active {
+  border-bottom: #00CDEC 3px solid;
+}
+.header-component .sitenav .header-left {
+  float: left;
+  min-width: 300px;
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+}
+.header-component .sitenav .header-left img {
+  flex-shrink: 0;
+}
+.header-component .sitenav .header-right {
+  float: left;
+}
+.header-component .sitenav .header-icon {
+  padding: 13px;
+  margin-left: 7px;
+}
+.header-component .sitenav .header-icon img {
+  width: 30px;
+}
+.header-component .sitenav .smart-app {
+  min-width: 65px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 11px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.header-component .sitenav .header-info {
+  line-height: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  width: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.header-component .sitenav .header-info > a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-weight: normal;
+}
+.header-component .sitenav .header-select {
+  line-height: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  margin-left: 29px;
+  width: 100%;
+}
+.header-component .sitenav .header-select a {
+  color: white;
+  text-decoration: none;
+}
+.header-component .sitenav .header-select .selectIcon {
+  vertical-align: middle;
+  margin: 0 9px;
+}
+.header-component .sitenav .header-select .app-name-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.header-component .sitenav .header-select .app-name-cont:hover {
+  background: #262c30;
+}
+.header-component .sitenav .header-select .app-name {
+  border-left: #373D41 1px solid;
+  height: 27px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: normal;
+}
+.header-component .sitenav .header-user {
+  padding: 5px 30px;
+  width: 40px;
+  box-sizing: initial;
+  height: 40px;
+}
+.header-component .sitenav .header-user img {
+  border-radius: 50%;
+}
+.header-menu {
+  padding: 0px;
+  border: none;
+}
+.header-menu .next-menu-item {
+  min-width: 149px;
+  height: 50px;
+  line-height: 50px;
+  background: #262C30;
+  border-left: #262C30 3px solid;
+}
+.header-menu .next-menu-item:hover {
+  border-left: #00C1DE 3px solid;
+  background: #1B2126;
+}
+.header-menu .next-menu-item a,
+.header-menu .next-menu-item a:hover,
+.header-menu .next-menu-item a:visited,
+.header-menu .next-menu-item a:link,
+.header-menu .next-menu-item a:active {
+  color: white;
+}
+.header ul {
+  font-size: 14px;
+}
