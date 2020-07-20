@@ -35,7 +35,7 @@
     "hc-bee": "^0.1.0",
     "path-ignore": "^1.0.1",
     "axios": "^0.18.0",
-    "lodash": "4.17.4"
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "honeypack": "^1.0.1",
